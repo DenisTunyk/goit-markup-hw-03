@@ -1,0 +1,209 @@
+/* 
+bg-color-primary #2196F3 - голубой цвет фона
+bg-color-secondary #F5F4FA  - серый цвет фона
+text-color-primary #757575  - основной цвет фона
+text-color-secondary #212121 - название кнопок и заголовков
+text-color-activ #2196F3 - активный текст
+ */
+
+/* Стили ко всему документу */
+:root {
+  --bg-all-documents: #ffffff;
+  --bg-color-primary: #2196f3;
+  --bg-color-secondary: #f5f4fa;
+  --text-color-btn-primary: #ffffff;
+  --text-color-btn-secondary: #212121;
+  --text-color-primary: #757575;
+  --text-color-secondary: #212121;
+  --text-color-active: #2196f3;
+  --black-color: #212121;
+  --white-color: #ffffff;
+  
+}
+
+/* Загальні стилі для всього документа */
+body{
+  color: var(--text-color-primary);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list{
+  list-style-type: none;
+}
+.link{
+  text-decoration: none;
+  color: currentColor;
+}
+.section-title{
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-subtitle{
+  font-size: 14px;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* END Загальні стилі для всього документа */
+
+/* Стилі для логотипа */
+.logo{
+  color: var(--text-color-active);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-black{
+  color: var(--black-color);
+}
+/* END Стилі для логотипа*/
+
+
+
+/* Стилі nav */
+.header{
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link{
+  color: var(--text-color-secondary);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--text-color-active);
+}
+.site-nav .link.active {
+  color: var(--text-color-active);
+}
+.site-contact .link:hover,
+.site-contact .link:focus {
+  color: var(--text-color-active);
+}
+/* END Стилі nav  */
+
+/* Section baner */
+.banner{
+  background-color: #2f303a;
+}
+.banner .title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.banner .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+}
+/* END section baner */
+
+/* Section our comand */
+.site-command {
+  text-align: center;
+}
+.site-command .comand-name{
+  color: var(--text-color-btn-secondary);
+  font-weight: 500;
+  line-height: 1.18;
+  font-size: 16px;
+}
+
+.site-command .text{
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+
+/* =====================PORTFOLIO====================== */
+/* Button */
+.filter-button-prm {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+}
+
+.filter-button-sec{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-btn-secondary);
+}
+
+.filter-button-sec:hover,
+.filter-button-sec:focus {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-btn-primary);
+}
+
+/* Section project on PORTFOLIO */
+
+.site-project-title {
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.site-project-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* footer */
+.site-footer {
+  background-color: #2f303a;
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+
+.footer-contact{
+  font-style: inherit;
+}
+
+.footer-contact-link {
+  color: rgb(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-contact-link:hover, .footer-contact-link:focus{
+  color: #ffffff;
+}
+
+
+
