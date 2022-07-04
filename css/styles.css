@@ -8,7 +8,6 @@ text-color-activ #2196F3 - активный текст
 
 /* Стили ко всему документу */
 :root {
-  --bg-all-documents: #ffffff;
   --bg-color-primary: #2196f3;
   --bg-color-secondary: #f5f4fa;
   --text-color-btn-primary: #ffffff;
@@ -22,6 +21,9 @@ text-color-activ #2196F3 - активный текст
 }
 
 /* Загальні стилі для всього документа */
+html{
+  box-sizing: border-box;
+}
 body{
   color: var(--text-color-primary);
   font-family: "Roboto", sans-serif;
@@ -29,14 +31,25 @@ body{
   font-size: 14px;
   line-height: 1.71;
 }
+.container{
+  width: 1200px;
+  padding: 0 15px;
+}
 .list{
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
 }
 .link{
   text-decoration: none;
   color: currentColor;
 }
+.section{
+  padding: 94px 0px;
+}
 .section-title{
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--text-color-secondary);
   font-weight: 700;
   font-size: 36px;
@@ -44,13 +57,7 @@ body{
   text-align: center;
 }
 
-.section-subtitle{
-  font-size: 14px;
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
+
 
 /* END Загальні стилі для всього документа */
 
@@ -97,22 +104,24 @@ body{
 /* Section baner */
 .banner{
   background-color: #2f303a;
+  text-align: center;
 }
 .banner .title {
+  margin-top: 0px;
+  margin-bottom: 40px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  
 }
 
 .banner .btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   font-family: inherit;
   cursor: pointer;
   letter-spacing: 0.06em;
@@ -120,6 +129,28 @@ body{
   color: var(--text-color-btn-primary);
 }
 /* END section baner */
+
+/* Section about */
+.site-about{
+  padding-top: 94px;
+}
+.site-about .section-subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.site-about .text {
+  margin: 0px;
+}
+/* Section about END */
+
+/* Section site-work */
+
+/* Section site-work END*/
 
 /* Section our comand */
 .site-command {
@@ -185,6 +216,7 @@ body{
 
 /* footer */
 .site-footer {
+  padding: 60px 0px;
   background-color: #2f303a;
 }
 
