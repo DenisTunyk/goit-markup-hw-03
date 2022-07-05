@@ -31,13 +31,15 @@ body{
   font-size: 14px;
   line-height: 1.71;
 }
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0px;
+  padding: 0px;
+}
 .container{
   width: 1200px;
   padding: 0 15px;
 }
 .list{
-  margin: 0px;
-  padding: 0px;
   list-style-type: none;
 }
 .link{
@@ -103,6 +105,7 @@ body{
 
 /* Section baner */
 .banner{
+  padding: 200px 0px;
   background-color: #2f303a;
   text-align: center;
 }
@@ -132,7 +135,7 @@ body{
 
 /* Section about */
 .site-about{
-  padding-top: 94px;
+  padding-bottom: 0px;
 }
 .site-about .section-subtitle {
   margin-top: 0px;
@@ -156,14 +159,18 @@ body{
 .site-command {
   text-align: center;
 }
+
 .site-command .comand-name{
+  margin-top: 30px;
   color: var(--text-color-btn-secondary);
   font-weight: 500;
   line-height: 1.18;
   font-size: 16px;
+  
 }
 
 .site-command .text{
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -171,6 +178,9 @@ body{
 
 /* =====================PORTFOLIO====================== */
 /* Button */
+.filter-menu {
+  margin-bottom: 50px;
+}
 .filter-button-prm {
   font-weight: 500;
   font-size: 16px;
@@ -200,6 +210,9 @@ body{
 }
 
 /* Section project on PORTFOLIO */
+/* .site-project{
+  padding: 20px 24px;
+} */
 
 .site-project-title {
   color: var(--text-color-secondary);
@@ -210,6 +223,7 @@ body{
 }
 
 .site-project-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -225,7 +239,11 @@ body{
 }
 
 .footer-contact{
+  margin-top: 20px;
   font-style: inherit;
+}
+.footer-contact .item{
+  margin-bottom: 9px;
 }
 
 .footer-contact-link {
