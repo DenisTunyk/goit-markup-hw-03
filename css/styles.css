@@ -83,6 +83,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
   overflow: hidden;
 }
 
+/* Flex start */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--set-margin));
+  margin-top: calc(-1 * var(--set-margin));
+}
+
+.card-item {
+  /* width: 270px; */
+  margin-left: var(--set-margin);
+  margin-top: var(--set-margin);
+}
+/* Flex end */
 
 
 /* END Загальні стилі для всього документа */
@@ -192,18 +206,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .site-about{
   padding-bottom: 0px;
 }
-.site-about-flex{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--set-margin));
-  margin-top: calc(-1 * var(--set-margin));
-}
-.site-about-flex > .item{
-  /* width: 270px; */
+.site-about-item{
   flex-basis: calc(100% / 4 - var(--set-margin));
-  margin-left: var(--set-margin);
-  margin-top: var(--set-margin);
 }
+
 /* .site-about-flex>.item:nth-of-type(4n){
   margin-right: 0px;
 } */
@@ -226,16 +232,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .site-work .image{
   display: block;
 }
-.site-work-flex{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--set-margin));
-  margin-top: calc(-1 * var(--set-margin));
-}
-.site-work-flex > .item{
+
+.site-work-item{
   flex-basis: calc(100% / 3 - var(--set-margin));
-  margin-left: var(--set-margin);
-  margin-top: var(--set-margin);
 }
 /* Section site-work END*/
 
@@ -253,19 +252,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding-left: 30px;
   padding-right: 30px;
 }
-.site-comand-flex{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--set-margin));
-  margin-top: calc(-1 * var(--set-margin));
-}
-.site-comand-flex > .item{
+
+.site-command-item{
   flex-basis: calc(100% / 4 - var(--set-margin));
-  margin-left: var(--set-margin);
-  margin-top: var(--set-margin);
-}
-.site-comand-flex .item:nth-of-type(4n){
-  margin-right: 0px;
 }
 
 .site-command .comand-name{
@@ -295,7 +284,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .filter-button-prm {
   padding: 6px 22px;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -309,7 +298,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .filter-button-sec{
   padding: 6px 22px;
   border: none;
-  border-radius: 2px;;
+  border-radius: 4px;;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -327,16 +316,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Section project on PORTFOLIO */
-.flex-container{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--set-margin));
-  margin-top: calc(-1 * var(--set-margin));
-}
-.flex-container .item{
+
+.allwork-item{
   flex-basis: calc(100% / 3 - var(--set-margin));
-  margin-left: var(--set-margin);
-  margin-top: var(--set-margin);
 }
 
 .flex-container .image{
